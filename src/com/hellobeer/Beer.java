@@ -1,5 +1,9 @@
 package com.hellobeer;
 
+/**
+ * Represents one completed beer.
+ * Currently only holds identification and found status, but may later contain aliases.
+ */
 public class Beer implements Comparable<Beer>
 {
 	String name;

@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import com.itextpdf.text.pdf.parser.LocationTextExtractionStrategy;
 import com.itextpdf.text.pdf.parser.TextRenderInfo;
 
+/**
+ * Extension class of TextExtractionStrategy.
+ * Holds data from PdfTextExtractor.
+ */
 public class FindBeerStrategy extends LocationTextExtractionStrategy
 {
 	public ArrayList<Line> entries = new ArrayList<Line>();

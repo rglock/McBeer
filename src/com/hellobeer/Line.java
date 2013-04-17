@@ -2,8 +2,15 @@ package com.hellobeer;
 
 import java.util.ArrayList;
 
+/**
+ * Represents all the text of a single (y-value) line.
+ */
 public class Line
 {
+	/**
+	 * Represents a string on a single line.
+	 * May be as long as the whole width of a line or as short as a space character. 
+	 */
 	public class Block
 	{
 		String text;
@@ -15,6 +22,10 @@ public class Line
 	boolean isBold = false;
 	public ArrayList<Block> blocks = new ArrayList<Block>();
 	
+	/**
+	 * Returns sum of strings in blocks. 
+	 * @return The text contained in this line.
+	 */
 	public String getText()
 	{
 		StringBuilder stb = new StringBuilder();
@@ -25,10 +36,12 @@ public class Line
 		return stb.toString();
 	}
 	
-	public float getStartX(boolean trim)
-	{
-		return getStartX(trim, "");
-	}
+	/**
+	 * 
+	 * @param trim
+	 * @param text
+	 * @return
+	 */
 	public float getStartX(boolean trim, String text)
 	{
 		if (blocks.size() > 0)
@@ -49,10 +62,12 @@ public class Line
 		return 0;
 	}
 	
-	public float getEndX(boolean trim)
-	{
-		return getEndX(trim, "");
-	}
+	/**
+	 * 
+	 * @param trim
+	 * @param text
+	 * @return
+	 */
 	public float getEndX(boolean trim, String text)
 	{
 		if (blocks.size() > 0)
