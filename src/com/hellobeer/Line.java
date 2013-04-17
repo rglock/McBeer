@@ -37,10 +37,8 @@ public class Line
 	}
 	
 	/**
-	 * 
-	 * @param trim
-	 * @param text
-	 * @return
+	 * Returns left edge X-position of first text block in line, or the first block to match text
+	 * @return Line's start X-position.
 	 */
 	public float getStartX(boolean trim, String text)
 	{
@@ -63,10 +61,8 @@ public class Line
 	}
 	
 	/**
-	 * 
-	 * @param trim
-	 * @param text
-	 * @return
+	 * Returns right edge X-position of last text block in line, or the first block to match text
+	 * @return Line's end X position.
 	 */
 	public float getEndX(boolean trim, String text)
 	{
